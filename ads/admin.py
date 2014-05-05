@@ -1,6 +1,7 @@
 from django.contrib import admin
 from ads.models import Categoria, Elemento
 # Register your models here.
+# register your .
 
 
 class CategoriaAdmin(admin.ModelAdmin):
