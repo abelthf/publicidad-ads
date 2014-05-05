@@ -1,7 +1,12 @@
+# coding: utf-8
+# abel
+# ruben
+#Shiane
+
 from django.db import models
 
 # Create your models here.
-#Shiane
+
 
 class Categoria(models.Model):
     nombre = models.CharField(max_length=255)
