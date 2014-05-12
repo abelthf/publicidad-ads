@@ -14,6 +14,9 @@ class Categoria(models.Model):
     nombre = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
 
+    def __unicode__(self):
+        return self.nombre
+
 
 TIPO_ANUNCIO =(
     ('C', 'Compra'),
@@ -31,3 +34,7 @@ class Elemento(models.Model):
     seccion = models.CharField(max_length=255)
     descripcion = models.TextField()
     publicado_en = models.DateTimeField(auto_now_add=True)
+
+
+    def __unicode__(self):
+        return self.nombre
