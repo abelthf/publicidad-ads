@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta description="Esta es la pagina principal de ADS">
+    <title>{{ titulo  }}  </title>
+</head>
+
+<body>
+    <h1> {{ titulo }} </h1>
+    <p>
+    Negocie aquí los productos que quiera comprar o vender...
+    </p>
+    <ul>
+        {% for elemento in elementos %}
+        <li> {{ elemento.nombre }} </li>
+        {% endfor %}
+
+
+    </ul>
+</body>
+
+</html>
